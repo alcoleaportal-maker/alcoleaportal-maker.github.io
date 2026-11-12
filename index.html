@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Albert – Junior Backend Developer (Python). Portfolio and projects.">
+<title>Albert · Junior Backend Developer</title>
+<style>
+  :root { --bg:#f6f4f1; --card:#ffffff; --text:#1f2126; --muted:#5f6368; --accent:#e8743b; --line:#e4e0db; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181c; --card:#1f2126; --text:#f1f1f1; --muted:#a3a7ad; --line:#2e3238; }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--text); line-height:1.6;
+         font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:56px 24px; }
+  header h1 { margin:0 0 6px; font-size:2.2rem; }
+  header .role { color:var(--accent); font-weight:700; margin:0 0 14px; }
+  header p { color:var(--muted); max-width:60ch; margin:0 0 20px; }
+  .btns a { display:inline-block; margin:0 10px 10px 0; padding:10px 18px; border-radius:10px;
+            border:2px solid var(--accent); color:var(--text); text-decoration:none; font-weight:600; }
+  .btns a.primary { background:var(--accent); color:#fff; }
+  .btns a:hover { opacity:.85; }
+  section { margin-top:48px; }
+  h2 { font-size:1.25rem; margin:0 0 16px; padding-bottom:8px; border-bottom:2px solid var(--line); }
+  .tags { display:flex; flex-wrap:wrap; gap:8px; }
+  .tags span { background:var(--card); border:1px solid var(--line); padding:6px 14px; border-radius:999px; font-size:.92rem; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .project { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .project h3 { margin:0 0 8px; font-size:1.1rem; }
+  .project p { margin:0 0 12px; color:var(--muted); font-size:.95rem; }
+  .project .stack { font-size:.85rem; color:var(--accent); font-weight:600; margin-bottom:12px; }
+  .project a, .mail { color:var(--accent); font-weight:600; text-decoration:none; }
+  footer { margin-top:56px; color:var(--muted); font-size:.9rem; }
+  footer a { color:var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Hi, I’m Albert 👋</h1>
+    <p class="role">Junior Backend Developer · Python</p>
+    <p>I build backend applications with Python, from object-oriented business logic to REST APIs backed by relational databases. I’m looking for my first role as a junior backend developer.</p>
+    <div class="btns">
+      <a class="primary" href="#projects">See my projects</a>
+      <a href="https://github.com/alcoleaportal-maker">GitHub</a>
+      <a href="https://www.linkedin.com/in/albert-alcolea-portal-90b712263">LinkedIn</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Tech stack</h2>
+    <div class="tags">
+      <span>Python</span><span>FastAPI</span><span>SQLite</span><span>SQL</span>
+      <span>Git &amp; GitHub</span><span>Linux</span><span>REST APIs</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured projects</h2>
+    <div class="grid">
+      <article class="project">
+        <h3>Employee Management System</h3>
+        <p>A Python application for managing employee data, built with object-oriented programming and separated business logic.</p>
+        <div class="stack">Python</div>
+        <a href="https://github.com/alcoleaportal-maker/employee-management-system">View repository →</a>
+      </article>
+      <article class="project">
+        <h3>Employee Management API</h3>
+        <p>A REST API for managing employees, with database integration and full CRUD operations.</p>
+        <div class="stack">Python · FastAPI · SQLite</div>
+        <!-- TODO: replace with the exact URL of your API repository -->
+        <a href="https://github.com/alcoleaportal-maker?tab=repositories">View repositories →</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>I’m open to junior backend opportunities and professional connections.</p>
+    <p><a class="mail" href="mailto:alcoleaportal@gmail.com">alcoleaportal@gmail.com</a> · Uruguay</p>
+  </section>
+
+  <footer>© Albert · Built with HTML &amp; CSS · <a href="https://github.com/alcoleaportal-maker">GitHub profile</a></footer>
+</div>
+</body>
+</html>
